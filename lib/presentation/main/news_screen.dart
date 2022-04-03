@@ -15,7 +15,7 @@ class NewsScreen extends StatelessWidget {
         builder: (context, value, child) {
           return SafeArea(
             child: ConditionalBuilder(
-              condition: value.mathematicsModel!.users != null ||
+              condition: value.mathematicsModel!.users != null &&
                   value.mathematicsModel != null,
               builder: (context) => Padding(
                 padding: const EdgeInsets.all(8.0),

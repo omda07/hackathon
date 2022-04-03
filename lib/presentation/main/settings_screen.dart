@@ -14,7 +14,7 @@ class SettingsScreen extends StatelessWidget {
         builder: (context, value, child) {
           return SafeArea(
             child: ConditionalBuilder(
-              condition: value.algorithmModel!.users != null ||
+              condition: value.algorithmModel!.users != null&&
                   value.algorithmModel != null,
               builder: (context) => Padding(
                 padding: const EdgeInsets.all(8.0),

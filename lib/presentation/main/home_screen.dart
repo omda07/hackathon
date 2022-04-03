@@ -16,8 +16,8 @@ class HomeScreen extends StatelessWidget {
           return SafeArea(
             child: ConditionalBuilder(
               condition: value.backendUserModel!.users != null &&
-                  value.backendUserModel != null &&
-                  value.model != null,
+                  value.backendUserModel != null ,
+
               builder: (context) => Column(
                 children: [
                   UserCard(value.model!),

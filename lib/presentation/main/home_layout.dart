@@ -28,13 +28,14 @@ class Home extends StatelessWidget {
                     value.getBackendUsers();
                     value.getMathematicsUsers();
                     value.getAlgorithmModelUsers();
+                    value.getUser();
                   },
                   icon: const Icon(Icons.refresh_outlined)),
             ],
           ),
           body: ConditionalBuilder(
             condition:
-            value.backendUserModel != null && value.model != null,
+            value.backendUserModel != null,
             builder: (context) => Center(
               child: value.screens[value.currentIndex],
             ),

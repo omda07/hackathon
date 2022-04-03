@@ -154,7 +154,7 @@ class AppProvider with ChangeNotifier {
 
   Future getAlgorithmModelUsers() async {
     await HttpHelper.getData(
-      url: mathematics,
+      url: algorithm,
     ).then((value) {
       var mJson = json.decode(value.body);
       algorithmModel = AlgorithmModel.fromJson(mJson);
